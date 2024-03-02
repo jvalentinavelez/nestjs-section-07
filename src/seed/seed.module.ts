@@ -4,10 +4,11 @@ import { SeedController } from './seed.controller';
 import { PokemonModule } from 'src/pokemon/pokemon.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Pokemon } from 'src/pokemon/entities/pokemon.entity';
+import { CommonModule } from 'src/common/common.module';
 
 @Module({
   controllers: [SeedController],
   providers: [SeedService],
-  imports: [PokemonModule],
+  imports: [PokemonModule, CommonModule],
 })
 export class SeedModule {}

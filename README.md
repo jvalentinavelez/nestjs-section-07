@@ -5,19 +5,31 @@
 # Ejecutar en desarrollo
 
 1. Clonar el repositorio
-2. Ejecutar 
+2. Ejecutar
+
 ```
-yarn install 
+yarn install
 ```
+
 3. Tener Nest CLI instalado
+
 ```
 npm i -g @nestjs/cli
 ```
+
 4. Levantar la base de datos
+
 ```
 docker-compose up -d
 ```
 
+5. Repoblar la base de datos con la semilla
+
+```
+localhost:3000/api/v2/seed
+```
+
 ## Stack usado
-* MongoDB
-* Nest
+
+- MongoDB
+- Nest
